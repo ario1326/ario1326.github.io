@@ -21,10 +21,10 @@
             border-radius: 20px;
             overflow: hidden;
             width: 350px;
-            height: 350px;
+            height: 400px; /* Adjusted height for extra space */
             padding: 20px;
             text-align: center;
-            position: relative; /* Added to make the position of the signature relative to the login-container */
+            position: relative;
         }
 
         .login-container h2 {
@@ -65,10 +65,25 @@
             background-color: #45a049;
         }
 
+        .forgot-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .forgot-btn:hover {
+            background-color: #2980b9;
+        }
+
         .signature {
             position: absolute;
-            bottom: 10px; /* Adjusted to leave some space from the bottom */
-            left: 10px; /* Added left positioning */
+            bottom: 10px;
+            left: 10px;
             font-size: 12px;
             color: #555;
         }
@@ -88,6 +103,7 @@
             <input type="password" id="password" name="password" required>
         </div>
         <button type="button" class="login-btn" onclick="displayErrorMessage()">Login</button>
+        <button type="button" class="forgot-btn">Forgot Password</button>
     </form>
     <div class="signature">made by Ario Agharabi</div>
 </div>
